@@ -1,0 +1,16 @@
+.page {
+  height: 100vh;
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  font-family: "Monsterrat", sans-serif;
+  line-height: 1.375;
+  color: #fff;
+  background: #373737;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+}
