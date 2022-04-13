@@ -1,0 +1,31 @@
+$color-input: #272727;
+$size-w: 276px;
+$size-h: 59px;
+$padding-lr: 0 26px;
+
+.form-email {
+  position: relative;
+  width: $size-w;
+  height: $size-h;
+  .form-email__input {
+    height: 100%;
+    width: 100%;
+    padding: $padding-lr;
+    background: $color-input;
+    border: 0;
+    border-radius: 6px;
+    
+  }
+  .form-email__button {
+    cursor: pointer;
+    background: url(../img/input/chevron.png) 50% 50% no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 20%;
+    z-index: 1;
+
+    
+  }
+}
