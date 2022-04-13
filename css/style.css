@@ -131,6 +131,9 @@ h6 {
           flex-direction: column;
 }
 
+.main-gallery {
+  padding: 60px 0;
+}
 .main-gallery__container {
   max-width: 1200px;
   margin: auto;
@@ -218,7 +221,7 @@ h6 {
   min-height: 481px;
   position: relative;
 }
-.card-small .card-small__top {
+.card-small__top {
   min-height: 412px;
   background: #272727;
   display: -webkit-box;
@@ -423,6 +426,166 @@ h6 {
   height: 100%;
   width: 20%;
   z-index: 1;
+}
+
+.tuotown {
+  padding: 60px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.tuotown__container {
+  max-width: 1200px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 60px 0;
+}
+
+.grid-box {
+  display: -ms-grid;
+  display: grid;
+  gap: 0 80px;
+}
+.grid-box_location_top {
+  -ms-grid-columns: 289px 1fr;
+  grid-template-columns: 289px 1fr;
+      grid-template-areas: "img title" "img top-text" "img bottom-text";
+}
+.grid-box_location_bottom {
+  -ms-grid-columns: 1fr 289px;
+  grid-template-columns: 1fr 289px;
+      grid-template-areas: "top-text img" "bottom-text img" "title img";
+}
+.grid-box__img {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  grid-area: img;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.grid-box_location_bottom > .grid-box__img {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 2;
+}
+.grid-box__title {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: title;
+  max-width: 95%;
+  font-family: "Jura";
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 1.2;
+}
+.grid-box_location_bottom > .grid-box__title {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+.grid-box__text {
+  font-size: 16px;
+  line-height: 1.38;
+  max-width: 90%;
+}
+.grid-box__text:nth-of-type(1) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: top-text;
+}
+.grid-box_location_bottom > .grid-box__text:nth-of-type(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.grid-box__text:nth-of-type(2) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: bottom-text;
+}
+.grid-box_location_bottom > .grid-box__text:nth-of-type(2) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+}
+
+.interesting {
+  padding: 60px 0;
+}
+.interesting__container {
+  max-width: 1200px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 37px 0;
+}
+.interesting__title {
+  font-family: "Jura";
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 0.83;
+}
+
+.grid-interesting {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  gap: 0 28px;
+}
+.grid-interesting__column {
+  min-height: 465px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  z-index: 1;
+  border-radius: 14px;
+  overflow: hidden;
+}
+.grid-interesting__background {
+  background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+  opacity: 0.6;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.grid-interesting__date {
+  padding: 22px 35px;
+  font-size: 14px;
+  line-height: 2;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+.grid-interesting__text {
+  padding: 22px 35px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 1.41;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+.grid-interesting__text:hover {
+  background: #C80000;
 }
 
 @font-face {

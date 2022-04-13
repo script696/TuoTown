@@ -1,0 +1,54 @@
+.tuotown {
+  padding: 60px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  &__container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 60px 0
+  }
+}
+.grid-box {
+  display: grid;
+  gap: 0 80px;
+  &_location_top {
+    grid-template-columns: 289px 1fr;
+    grid-template-areas:
+      "img title"
+      "img top-text"
+      "img bottom-text";
+  }
+  &_location_bottom {
+    grid-template-columns: 1fr 289px;
+    grid-template-areas:
+      "top-text img"
+      "bottom-text img"
+      "title img";
+  }
+  &__img {
+    grid-area: img;
+    width: 100%;
+    object-fit: cover;
+  }
+  &__title {
+    grid-area: title;
+    max-width: 95%;
+    font-family: "Jura";
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 1.2;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 1.38;
+    max-width: 90%;
+    &:nth-of-type(1) {
+      grid-area: top-text;
+    }
+    &:nth-of-type(2) {
+      grid-area: bottom-text;
+    }
+  }
+}
