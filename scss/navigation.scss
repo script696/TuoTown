@@ -1,23 +1,24 @@
 .navigation {
   padding: 60px 0;
-  .navigation__container {
-    max-width: 1200px;
+  &__container {
+    max-width: 1230px;
     margin: auto;
+    padding: 0 15px;
     display: flex;
     justify-content: space-between;
   }
-  .navigation__column{
+  &__column{
     flex: 1 1 auto;
     display: flex;
     flex-direction: column;
     row-gap: 30px;
     align-items: center;
   }
-  .navigation__img{
+  &__img{
     width: 46px;
     height: 46px;
   }
-  .navigation__link {
+  &__link {
     color: #878787;
     font-weight: 500;
     font-size: 17px;

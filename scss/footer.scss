@@ -1,0 +1,24 @@
+.footer {
+  flex: 0 0 90px;
+  &__container {
+    max-width: 1230px;
+    padding: 0 15px;
+    height: 100%;
+    margin: auto;
+  }
+  &__row {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__copyrights {
+    font-size: 12px;
+    line-height: 1.75;
+    opacity: 0.5;
+  }
+  &__footer__img {
+    width: 156px;
+    height: 17px;
+  }
+}

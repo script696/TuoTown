@@ -1,8 +1,9 @@
 .interesting {
   padding: 60px 0;
   &__container {
-    max-width: 1200px;
+    max-width: 1230px;
     margin: auto;
+    padding: 0 15px;
     display: flex;
     flex-direction: column;
     gap: 37px 0;

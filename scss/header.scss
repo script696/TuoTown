@@ -1,6 +1,39 @@
-.header{
+/*Header*/
+.header {
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  background: red;
+  background: rgba(33, 33, 33, 0.8);
+  backdrop-filter: blur(11px);
+  &__container {
+    height: 74px;
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: auto;
+  }
+  &__menu {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+.header-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__left {
+    display: flex;
+    gap: 0 25px;
+    position: relative;
+  }
+  &__center {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+  }
+  &__right {
+    display: flex;
+    gap: 0 25px;
+  }
 }

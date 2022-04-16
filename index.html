@@ -8,7 +8,44 @@
     <title>Document</title>
   </head>
   <body class="page">
-    <header class="header">Header</header>
+    <header class="header">
+      <div class="header__container header-row">
+        <div class="header-row__left">
+          <div class="header__menu menu">
+            <input type="checkbox" id="menu" class="menu__input" hidden="">
+            <label for="menu" class="menu__main-button"></label>
+            <div class="menu__column">
+              <ul class="menu__list">
+                <li><a href="#" class="menu__link menu__link_position_top">Кухонные ножи TUOTOWN</a></li>
+                <li><a href="#" class="menu__link menu__link_position_top">Складные ножи TUOTOWN</a></li>
+                <li><a href="#" class="menu__link menu__link_position_top">Кухонные ножи QXF</a></li>
+                <li><a href="#" class="menu__link menu__link_position_top">Точильные камни</a></li>
+                <li><a href="#" class="menu__link menu__link_position_top">Наборы для BBQ</a></li>
+                <li><a href="#" class="menu__link menu__link_position_top">Кухонные принадлежности</a></li>
+                <li><a href="#" class="menu__link menu__link_position_top">Туристические товары</a></li>
+              </ul>
+              <ul class="menu__list">
+                <li><a href="#" class="menu__link menu__link_position_bottom">Новости</a></li>
+                <li><a href="#" class="menu__link menu__link_position_bottom">О компании</a></li>
+                <li><a href="#" class="menu__link menu__link_position_bottom">Контакты</a></li>
+                <li><a href="#" class="menu__link menu__link_position_bottom">Как проехать</a></li>
+              </ul>
+            </div>
+            <div class="menu__fake-background"></div>
+          </div>
+          <img src="./img/header/__map.svg">
+          <a href="tel: +79811201117" class="tel-num">+7 (981) 120-11-17</a>
+        </div>
+        <div class="header-row__center">
+          <img src="./img/logo/__logo.png" alt="Logo" class="bottom-left__img">
+        </div>
+        <div class="header-row__right">
+          <img src="./img/header/__shop.svg">
+          <img src="./img/header/__mail.svg">
+          <img src="./img/header/__search.svg">
+        </div>
+      </div>
+    </header>
     <main class="main">
       <section class="intro">
         <div class="intro__container"></div>
@@ -61,11 +98,11 @@
             </li>
             <li class="gallery-grid__item card-small">
               <div class="card-small__top">
-                <img src="./img/main-galelry/sq01-b.png" alt="Нож sq01-b" class="small__img" />
+                <img src="./img/main-galelry/sq01-b.png" alt="Нож sq01-b" class="card-small__img" />
               </div>
               <div class="card-small__bottom">
-                <p class="small__name">Складной нож SQ01-B</p>
-                <p class="small__price card-small_new">850 р.</p>
+                <p class="card-small__name">Складной нож SQ01-B</p>
+                <p class="card-small__price card-small_new">850 р.</p>
               </div>
               <div class="card-small__link flex-link">
                 <span class="flex-link__plus"></span> 
@@ -74,11 +111,11 @@
             </li>
             <li class="gallery-grid__item card-small">
               <div class="card-small__top">
-                <img src="./img/main-galelry/tuo-b.png" alt="Нож tuo-b" class="small__img" />
+                <img src="./img/main-galelry/tuo-b.png" alt="Нож tuo-b" class="card-small__img" />
               </div>
               <div class="card-small__bottom">
-                <p class="small__name">Складной нож JJ001-TUO-B</p>
-                <p class="small__price">12 850 р.</p>
+                <p class="card-small__name">Складной нож JJ001-TUO-B</p>
+                <p class="card-small__price">12 850 р.</p>
               </div>
               <div class="card-small__link flex-link">
                 <span class="flex-link__plus"></span> 
@@ -87,11 +124,11 @@
             </li>
             <li class="gallery-grid__item card-small">
               <div class="card-small__top">
-                <img src="./img/main-galelry/sq01-b.png" alt="Нож tuo-b" class="small__img" />
+                <img src="./img/main-galelry/sq01-b.png" alt="Нож tuo-b" class="card-small__img" />
               </div>
               <div class="card-small__bottom">
-                <p class="small__name">Складной нож JJ001-TUO-B</p>
-                <p class="small__price">12 850 р.</p>
+                <p class="card-small__name">Складной нож JJ001-TUO-B</p>
+                <p class="card-small__price">12 850 р.</p>
               </div>
               <div class="card-small__link flex-link">
                 <span class="flex-link__plus"></span> 
@@ -100,11 +137,11 @@
             </li>
             <li class="gallery-grid__item card-small">
               <div class="card-small__top">
-                <img src="./img/main-galelry/tuo-b.png" alt="Нож tuo-b" class="small__img" />
+                <img src="./img/main-galelry/tuo-b.png" alt="Нож tuo-b" class="card-small__img" />
               </div>
               <div class="card-small__bottom">
-                <p class="small__name">Складной нож JJ001-TUO-B</p>
-                <p class="small__price">12 850 р.</p>
+                <p class="card-small__name">Складной нож JJ001-TUO-B</p>
+                <p class="card-small__price">12 850 р.</p>
               </div>
               <div class="card-small__link flex-link">
                 <span class="flex-link__plus"></span> 
@@ -113,16 +150,16 @@
             </li>
             <li class="gallery-grid__item card-small">
               <div class="card-small__top">
-                <img src="./img/main-galelry/insta-knife.png" alt="Нож tuo-b" class="small__img" />
+                <img src="./img/main-galelry/insta-knife.png" alt="Нож tuo-b" class="card-small__img" />
               </div>
             </li>
             <li class="gallery-grid__item  card-small">
               <div class="card-small__top">
-                <img src="./img/main-galelry/tuo-b.png" alt="Нож tuo-b" class="small__img" />
+                <img src="./img/main-galelry/tuo-b.png" alt="Нож tuo-b" class="card-small__img" />
               </div>
               <div class="card-small__bottom">
-                <p class="small__name">Складной нож JJ001-TUO-B</p>
-                <p class="small__price">12 850 р.</p>
+                <p class="card-small__name">Складной нож JJ001-TUO-B</p>
+                <p class="card-small__price">12 850 р.</p>
               </div>
               <div class="card-small__link flex-link">
                 <span class="flex-link__plus"></span> 
@@ -144,11 +181,11 @@
             </li>
             <li class="gallery-grid__item  card-small">
               <div class="card-small__top">
-                <img src="./img/main-galelry/sq01-b.png" alt="Нож tuo-b" class="small__img" />
+                <img src="./img/main-galelry/sq01-b.png" alt="Нож tuo-b" class="card-small__img" />
               </div>
               <div class="card-small__bottom">
-                <p class="small__name">Складной нож SQ01-B</p>
-                <p class="small__price">850 р.</p>
+                <p class="card-small__name">Складной нож SQ01-B</p>
+                <p class="card-small__price">850 р.</p>
               </div>
               <div class="card-small__link flex-link">
                 <span class="flex-link__plus"></span> 
@@ -157,11 +194,11 @@
             </li>
             <li class="gallery-grid__item  card-small">
               <div class="card-small__top">
-                <img src="./img/main-galelry/tuo-b.png" alt="Нож tuo-b" class="small__img" />
+                <img src="./img/main-galelry/tuo-b.png" alt="Нож tuo-b" class="card-small__img" />
               </div>
               <div class="card-small__bottom">
-                <p class="small__name">Складной нож JJ001-TUO-B</p>
-                <p class="small__price">12 850 р.</p>
+                <p class="card-small__name">Складной нож JJ001-TUO-B</p>
+                <p class="card-small__price">12 850 р.</p>
               </div>
               <div class="card-small__link flex-link">
                 <span class="flex-link__plus"></span> 
@@ -170,11 +207,11 @@
             </li>
             <li class="gallery-grid__item  card-small">
               <div class="card-small__top">
-                <img src="./img/main-galelry/sq01-b.png" alt="Нож tuo-b" class="small__img" />
+                <img src="./img/main-galelry/sq01-b.png" alt="Нож tuo-b" class="card-small__img" />
               </div>
               <div class="card-small__bottom">
-                <p class="small__name">Складной нож SQ01-B</p>
-                <p class="small__price card-small_new">850 р.</p>
+                <p class="card-small__name">Складной нож SQ01-B</p>
+                <p class="card-small__price card-small_new">850 р.</p>
               </div>
               <div class="card-small__link flex-link">
                 <span class="flex-link__plus"></span> 
@@ -183,11 +220,11 @@
             </li>
             <li class="gallery-grid__item  card-small">
               <div class="card-small__top">
-                <img src="./img/main-galelry/tuo-b.png" alt="Нож tuo-b" class="small__img" />
+                <img src="./img/main-galelry/tuo-b.png" alt="Нож tuo-b" class="card-small__img" />
               </div>
               <div class="card-small__bottom">
-                <p class="small__name">Складной нож JJ001-TUO-B</p>
-                <p class="small__price">12 850 р.</p>
+                <p class="card-small__name">Складной нож JJ001-TUO-B</p>
+                <p class="card-small__price">12 850 р.</p>
               </div>
               <div class="card-small__link flex-link">
                 <span class="flex-link__plus"></span> 
@@ -235,7 +272,74 @@
           </div>
         </div>
       </section>
+      <section class="video">
+        <div class="video__container">
+          <iframe  class="video__iframe" src="https://www.youtube.com/embed/1zVxe-cuEeo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+        </div>
+      </section>
+      <section class="bottom">
+        <div class="bottom__container">
+          <div class="bottom__grid grid-bottom">
+            <div class="grid-bottom__left bottom-left">
+              <div class="bottom-row">
+                <a href=""><img src="./img/logo/__logo.png" alt="Logo" class="bottom-left__img"></a>
+                <h2 class="bottom-left__subtitle">легендарные ножи, создающие шедевры</h2> 
+              </div>
+              <p class="bottom-left__text">Компания «Tuotown» – эксклюзивный представитель профессиональных кухонных ножей, изготовленных лучшими мастерами Восточной Азии с применением передового европейского оборудования и современных материалов.</p> 
+              <p class="bottom-left__text">Они отличаются идеальным балансом и фантастической остротой. Сочетают в себе вековые традиции и новейшие разработки. Также предлагаем широкий ассортимент сопутствующих товаров.</p> 
+            </div> 
+            <div class="grid-bottom__center bottom-center">
+              <div class="bottom-center__information">
+                <p class="bottom-center__subtitle">Информация</p>
+                <nav>
+                  <ul class="bottom-center__links">
+                    <a href="#" class="bottom-center__link"><li>Главная</li></a>
+                    <a href="#" class="bottom-center__link"><li>Новости</li></a>
+                    <a href="#" class="bottom-center__link"><li>О компании</li></a>
+                    <a href="#" class="bottom-center__link"><li>Контакты</li></a>
+                  </ul>
+                </nav>
+              </div>
+              <div class="bottom-center__catalog">
+                <p class="bottom-center__subtitle">Каталог</p>
+                <nav>
+                  <ul class="bottom-center__links">
+                    <a href="#" class="bottom-center__link"><li>Кухонные ножи </li></a>
+                    <a href="#" class="bottom-center__link"><li>Складные ножи</li></a>
+                    <a href="#" class="bottom-center__link"><li>Точилки для ножей</li></a>
+                    <a href="#" class="bottom-center__link"><li>Аксессуары</li></a>
+                  </ul>
+                </nav>
+              </div>
+              <div class="bottom-center__social"> 
+              <p class="bottom-center__subtitle">Мы в соцсетях</p>
+              <ul class="bottom-center__links">
+                <a href="#" class="bottom-center__link-social bottom-center__link_fb"><li></li></a>
+                <a href="#" class="bottom-center__link-social bottom-center__link_vk"><li></li></a>
+                <a href="#" class="bottom-center__link-social bottom-center__link_in"><li></li></a>
+                <a href="#" class="bottom-center__link-social bottom-center__link_yt"><li></li></a>
+              </ul>
+            </div>
+            </div>
+            <div class="grid-bottom__right bottom-right">
+              <p class="bottom-right__subtitle">Контактная информация</p>
+              <a href="tel: +79811201117" class="tel-num">+7 (981) 120-11-17</a>
+              <a href="mailto: tuotown@mail.ru" class="bottom-right__email">tuotown@mail.ru</a>
+              <p class="bottom-right__text">08:00 — 18:00, ежедневно</p>
+              <p class="bottom-right__text">Россия, Москва, МКАД, 19-й километр, вл20с1, вход Ф, 22-68-70</p>
+              <a href=""><img src="./img/bottom/__link.png" alt=""class="bottom-right__img"></a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__row">
+          <p class="footer__copyrights">TUOTOWN © 2021 Торговая марка TUOTOWN зарегистрирована. Все права защищены и принадлежат правообладателям.</p>
+          <img src="./img/footer/__logo.png" alt="Tekapa разработка и поддержка" class="footer__logo">
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

@@ -2,8 +2,9 @@ $color-nain: #ff3232;
 .main-gallery {
   padding: 60px 0;
   &__container {
-    max-width: 1200px;
+    max-width: 1230px;
     margin: auto;
+    padding: 0 15px;
   }
 }
 
@@ -17,40 +18,40 @@ $color-nain: #ff3232;
     "email email email email"
     "small7 small8 small9 small10";
 
-  .gallery-grid__item:nth-child(1) {
+  &__item:nth-child(1) {
     grid-area: big;
   }
-  .gallery-grid__item:nth-child(2) {
+  &__item:nth-child(2) {
     grid-area: small1;
   }
-  .gallery-grid__item:nth-child(3) {
+  &__item:nth-child(3) {
     grid-area: small2;
   }
-  .gallery-grid__item:nth-child(4) {
+  &__item:nth-child(4) {
     grid-area: small3;
   }
-  .gallery-grid__item:nth-child(5) {
+  &__item:nth-child(5) {
     grid-area: small4;
   }
-  .gallery-grid__item:nth-child(6) {
+  &__item:nth-child(6) {
     grid-area: small5;
   }
-  .gallery-grid__item:nth-child(7) {
+  &__item:nth-child(7) {
     grid-area: small6;
   }
-  .gallery-grid__item:nth-child(8) {
+  &__item:nth-child(8) {
     grid-area: email;
   }
-  .gallery-grid__item:nth-child(9) {
+  &__item:nth-child(9) {
     grid-area: small7;
   }
-  .gallery-grid__item:nth-child(10) {
+  &__item:nth-child(10) {
     grid-area: small8;
   }
-  .gallery-grid__item:nth-child(11) {
+  &__item:nth-child(11) {
     grid-area: small9;
   }
-  .gallery-grid__item:nth-child(12) {
+  &__item:nth-child(12) {
     grid-area: small10;
   }
 }
@@ -69,28 +70,28 @@ $color-nain: #ff3232;
     border-radius: 14px;
     overflow: hidden;
   }
-  .card-small__bottom {
+  &__bottom {
     padding: 12px 0 0 0;
     flex: 1 1 auto;
   }
 
-  .small__img {
+  &__img {
     width: 100%;
     height: auto;
     object-fit: contain;
   }
-  .small__name {
+  &__name {
     font-weight: 500;
     font-size: 14px;
     line-height: 2;
   }
-  .small__price {
+  &__price {
     font-weight: 600;
     font-size: 14px;
     line-height: 2;
     opacity: 0.5;
   }
-  .card-small_new::after {
+  &_new::after {
     content: "Новинка";
     color: $color-nain;
     padding-left: 40px;
@@ -105,7 +106,7 @@ $color-nain: #ff3232;
   border-radius: 14px;
   overflow: hidden;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
-  .card-big__img {
+  &__img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -114,13 +115,13 @@ $color-nain: #ff3232;
     left: 0;
     z-index: -1;
   }
-  .card-big__bottom {
+  &__bottom {
     width: 100%;
     padding: 0 25px 25px 25px;
     display: flex;
     justify-content: space-between;
   }
-  .card__big__text {
+  &__text {
     flex: 1 1 auto;
     font-weight: 600;
     font-size: 17px;
@@ -131,17 +132,17 @@ $color-nain: #ff3232;
 .input-row {
   display: flex;
   justify-content: center;
-}
-.input-row__column {
-  max-width: 650px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 17px 0;
-}
-.input-row__title {
-  font-family: "Jura";
-  font-weight: 500;
-  font-size: 27px;
-  line-height: 1.56;
+  &__column {
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 17px 0;
+  }
+  &__title {
+    font-family: "Jura";
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 1.56;
+  }
 }

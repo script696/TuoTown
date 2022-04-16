@@ -3,8 +3,9 @@
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   &__container {
-    max-width: 1200px;
+    max-width: 1230px;
     margin: auto;
+    padding: 0 15px;
     display: flex;
     flex-direction: column;
     gap: 60px 0
