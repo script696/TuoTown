@@ -415,11 +415,13 @@ h6 {
   position: relative;
   border: 2px solid #c80000;
   border-radius: 27px;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
 .intro__button a:hover {
   padding: 0 60px;
+  -webkit-box-shadow: 0 0 10px 0 #c80000 inset, 0 0 20px 2px #c80000;
+          box-shadow: 0 0 10px 0 #c80000 inset, 0 0 20px 2px #c80000;
 }
 
 @media screen and (max-width: 612px) {

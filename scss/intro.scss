@@ -43,9 +43,11 @@
     position: relative;
     border: 2px solid #c80000;
     border-radius: 27px;
-    transition: 0.4s;
+    transition: all .15s ease-in-out;
+
     &:hover {
       padding: 0 60px;
+      box-shadow: 0 0 10px 0 #c80000 inset, 0 0 20px 2px #c80000;
     }
   }
 }
