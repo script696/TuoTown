@@ -2,26 +2,33 @@
 -----------------------*/
 @import "../fonts/fonts.css";
 
+/* Null Style
+-----------------------*/
+@import "nullstyle.scss";
 
 /* Blocks
 -----------------------*/
 
 /* -----Page-----------*/
 @import "page.scss";
+/* -----Main-----------*/
+@import "main.scss";
 /* -----Header-----------*/
 @import "header.scss";
 @import "header-row.scss";
 @import "menu.scss";
+/* -----Intro-----------*/
+@import "intro.scss";
+/* -----Navigation-----------*/
+@import "navigation.scss";
 /* -----Main Gallery-----------*/
 @import "main-galery.scss";
 @import "gallery-grid.scss";
+@import "card-small.scss";
+@import "card-big.scss";
 
 
 
-@import "nullstyle.scss";
-@import "intro.scss";
-@import "navigation.scss";
-@import "main.scss";
 @import "flex-link.scss";
 @import "form-email.scss";
 @import "tuotown.scss";
