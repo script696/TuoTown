@@ -4,17 +4,16 @@
     max-width: 1230px;
     margin: auto;
     padding: 0 15px;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
   }
-  &__column{
-    flex: 1 1 auto;
+  &__column {
     display: flex;
     flex-direction: column;
     row-gap: 30px;
     align-items: center;
   }
-  &__img{
+  &__img {
     width: 46px;
     height: 46px;
   }
@@ -25,8 +24,18 @@
     line-height: 21px;
     opacity: 1;
 
-    &:hover{
+    &:hover {
       color: #ff0000;
+    }
+  }
+}
+
+@media screen and (max-width: 1012px) {
+  .navigation {
+    &__container {
+      max-width: 630px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 50px 0;
     }
   }
 }

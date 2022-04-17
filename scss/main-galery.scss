@@ -8,53 +8,7 @@ $color-nain: #ff3232;
   }
 }
 
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(138px, 1fr));
-  gap: 25px 18px;
-  grid-template-areas:
-    "big big small1 small2"
-    "small3 small4 small5 small6"
-    "email email email email"
-    "small7 small8 small9 small10";
 
-  &__item:nth-child(1) {
-    grid-area: big;
-  }
-  &__item:nth-child(2) {
-    grid-area: small1;
-  }
-  &__item:nth-child(3) {
-    grid-area: small2;
-  }
-  &__item:nth-child(4) {
-    grid-area: small3;
-  }
-  &__item:nth-child(5) {
-    grid-area: small4;
-  }
-  &__item:nth-child(6) {
-    grid-area: small5;
-  }
-  &__item:nth-child(7) {
-    grid-area: small6;
-  }
-  &__item:nth-child(8) {
-    grid-area: email;
-  }
-  &__item:nth-child(9) {
-    grid-area: small7;
-  }
-  &__item:nth-child(10) {
-    grid-area: small8;
-  }
-  &__item:nth-child(11) {
-    grid-area: small9;
-  }
-  &__item:nth-child(12) {
-    grid-area: small10;
-  }
-}
 .card-small {
   display: flex;
   flex-direction: column;
@@ -69,6 +23,10 @@ $color-nain: #ff3232;
     align-items: center;
     border-radius: 14px;
     overflow: hidden;
+    &_background_inst {
+      background: url("../img/main-galelry/insta-knife.png") center / cover
+        no-repeat;
+    }
   }
   &__bottom {
     padding: 12px 0 0 0;
@@ -78,7 +36,7 @@ $color-nain: #ff3232;
   &__img {
     width: 100%;
     height: auto;
-    object-fit: contain;
+    object-fit: cover;
   }
   &__name {
     font-weight: 500;
@@ -96,6 +54,13 @@ $color-nain: #ff3232;
     color: $color-nain;
     padding-left: 40px;
   }
+  &__logo-text {
+    padding: 0 0 0 18px;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 1.65;
+    text-transform: uppercase;
+  }
 }
 
 .card-big {
@@ -110,6 +75,7 @@ $color-nain: #ff3232;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
     position: absolute;
     top: 0;
     left: 0;
@@ -144,5 +110,61 @@ $color-nain: #ff3232;
     font-weight: 500;
     font-size: 27px;
     line-height: 1.56;
+  }
+}
+
+@media screen and (max-width: 1012px) {
+  .gallery-grid {
+    grid-template-areas:
+      "big big"
+      "small1 small2"
+      "small3 small4 "
+      "small5 small6"
+      "small7 small8"
+      "small9 small10"
+      "email email";
+  }
+  .card-big {
+    min-height: 514px;
+  }
+  .card-small {
+    min-height: 451px;
+    &__top {
+      min-height: 379px;
+    }
+  }
+}
+@media screen and (max-width: 612px) {
+  .gallery-grid {
+    grid-template-areas:
+      "big"
+      "small1"
+      "small2"
+      "small3"
+      "small4"
+      "small5"
+      "small6"
+      "small7"
+      "small8"
+      "small9"
+      "small10"
+      "email";
+  }
+  .card-big {
+    min-height: 300px;
+  }
+  .card-small {
+    min-height: 190px;
+    &__img {
+      width: 100%;
+      max-height: 109px;
+      object-fit: contain;
+    }
+    &__top {
+      min-height: 120px;
+      &_background_inst {
+        min-height: 300px;
+      }
+    }
   }
 }

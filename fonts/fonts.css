@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "Monsterrat";
+  src: url(../fonts/Montserrat-Medium.woff2);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Monsterrat";
+  src: url(../fonts/Montserrat-Medium.woff2);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Monsterrat";
+  src: url(../fonts/Montserrat-SemiBold.woff2);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Jura";
+  src: url(../fonts/Jura-Medium.woff2);
+  font-weight: 500;
+}

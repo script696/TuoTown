@@ -1,10 +1,27 @@
-@import "nullstyle.scss";
-@import "header.scss";
-@import "intro.scss";
+/* Fonts
+-----------------------*/
+@import "../fonts/fonts.css";
+
+
+/* Blocks
+-----------------------*/
+
+/* -----Page-----------*/
 @import "page.scss";
+/* -----Header-----------*/
+@import "header.scss";
+@import "header-row.scss";
+@import "menu.scss";
+/* -----Main Gallery-----------*/
+@import "main-galery.scss";
+@import "gallery-grid.scss";
+
+
+
+@import "nullstyle.scss";
+@import "intro.scss";
 @import "navigation.scss";
 @import "main.scss";
-@import "main-galery.scss";
 @import "flex-link.scss";
 @import "form-email.scss";
 @import "tuotown.scss";
@@ -12,25 +29,4 @@
 @import "video.scss";
 @import "bottom.scss";
 @import "footer.scss";
-@import "menu.scss";
 
-@font-face {
-  font-family: "Monsterrat";
-  src: url(../fonts/Montserrat-Medium.woff2);
-  font-weight: 400;
-}
-@font-face {
-  font-family: "Monsterrat";
-  src: url(../fonts/Montserrat-Medium.woff2);
-  font-weight: 500;
-}
-@font-face {
-  font-family: "Monsterrat";
-  src: url(../fonts/Montserrat-SemiBold.woff2);
-  font-weight: 600;
-}
-@font-face {
-  font-family: "Jura";
-  src: url(../fonts/Jura-Medium.woff2);
-  font-weight: 500;
-}

@@ -1,0 +1,29 @@
+.header-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__left {
+    display: flex;
+    gap: 0 25px;
+    position: relative;
+  }
+  &__center {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+  }
+  &__right {
+    display: flex;
+    gap: 0 25px;
+  }
+}
+@media screen and (max-width: 612px) {
+  .header-row{
+    &__right {
+      display: none;
+    }
+  }
+  .tel-num{
+    display: none;
+  }
+}

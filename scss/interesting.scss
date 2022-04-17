@@ -31,6 +31,7 @@
   }
   &__background{
     background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    object-fit: cover;
     opacity: 0.6;
     position: absolute;
     z-index: -1;
@@ -54,5 +55,15 @@
     &:hover{
       background: #C80000;
     }
+  }
+}
+
+@media screen and (max-width: 1012px) {
+  .interesting__container{
+    max-width: 660px;
+  }
+  .grid-interesting {
+    grid-template-columns: 1fr;
+    gap: 30px 0;
   }
 }

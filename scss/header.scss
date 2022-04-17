@@ -6,6 +6,7 @@
   left: 0;
   background: rgba(33, 33, 33, 0.8);
   backdrop-filter: blur(11px);
+  z-index: 999;
   &__container {
     height: 74px;
     max-width: 1230px;
@@ -18,22 +19,6 @@
   }
 }
 
-.header-row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  &__left {
-    display: flex;
-    gap: 0 25px;
-    position: relative;
-  }
-  &__center {
-    flex: 1 1 auto;
-    display: flex;
-    justify-content: center;
-  }
-  &__right {
-    display: flex;
-    gap: 0 25px;
-  }
-}
+
+
+
