@@ -1,0 +1,15 @@
+.bottom-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px 0;
+  &__subtitle {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 1.31;
+  }
+  &__text {
+    font-size: 13px;
+    line-height: 1.54;
+  }
+}

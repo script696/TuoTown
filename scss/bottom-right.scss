@@ -1,0 +1,16 @@
+.bottom-right {
+  &__subtitle {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 1.65;
+  }
+  &__email {
+    color: inherit;
+    font-size: 14px;
+    line-height: 1.36;
+  }
+  &__img {
+    width: 87px;
+    height: 31px;
+  }
+}

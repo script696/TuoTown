@@ -1,0 +1,17 @@
+.grid-bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0 3%;
+  &__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px 0;
+  }
+}
+@media screen and (max-width: 1012px) {
+  .grid-bottom {
+    grid-template-columns: 1fr;
+    gap: 30px 0;
+  }
+}

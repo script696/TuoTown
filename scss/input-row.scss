@@ -1,0 +1,17 @@
+.input-row {
+  display: flex;
+  justify-content: center;
+  &__column {
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 17px 0;
+  }
+  &__title {
+    font-family: "Jura";
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 1.56;
+  }
+}

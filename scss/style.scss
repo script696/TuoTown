@@ -9,31 +9,30 @@
 /* Blocks
 -----------------------*/
 
-/* -----Page-----------*/
 @import "page.scss";
-/* -----Main-----------*/
 @import "main.scss";
-/* -----Header-----------*/
 @import "header.scss";
 @import "header-row.scss";
 @import "menu.scss";
-/* -----Intro-----------*/
 @import "intro.scss";
-/* -----Navigation-----------*/
 @import "navigation.scss";
-/* -----Main Gallery-----------*/
 @import "main-galery.scss";
 @import "gallery-grid.scss";
 @import "card-small.scss";
 @import "card-big.scss";
-
-
-
 @import "flex-link.scss";
 @import "form-email.scss";
 @import "tuotown.scss";
 @import "interesting.scss";
 @import "video.scss";
 @import "bottom.scss";
+@import "grid-bottom.scss";
+@import "bottom-row.scss";
+@import "bottom-left.scss";
+@import "bottom-center.scss";
+@import "bottom-right.scss";
 @import "footer.scss";
+@import "tel-num.scss";
+@import "input-row.scss";
+@import "grid-interesting.scss";
 

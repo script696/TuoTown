@@ -4,9 +4,10 @@
   position: absolute;
   top: 0;
   left: 0;
-  background: rgba(33, 33, 33, 0.8);
+  background: rgba(33, 33, 33, 0.6);
   backdrop-filter: blur(11px);
   z-index: 999;
+
   &__container {
     height: 74px;
     max-width: 1230px;

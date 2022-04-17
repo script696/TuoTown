@@ -1,0 +1,49 @@
+.bottom-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px 0;
+  &__subtitle {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 1.65;
+  }
+  &__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px 20px;
+  }
+  &__link {
+    color: inherit;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.71;
+    &_fb {
+      background: #2e2e2e url(../img/logo/fb.svg) center / 50% no-repeat;
+    }
+    &_vk {
+      background: #2e2e2e url(../img/logo/vk.svg) center / 50% no-repeat;
+    }
+    &_in {
+      background: #2e2e2e url(../img/logo/vk.svg) center / 50% no-repeat;
+    }
+    &_yt {
+      background: #2e2e2e url(../img/logo/yt.svg) center / 50% no-repeat;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__social {
+    display: flex;
+    gap: 0 5%;
+  }
+  &__link-social {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
